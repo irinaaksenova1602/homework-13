@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+.picture {
+  background-image: url(../img/istockphoto-686325610-612x612.jpg);
+  width: 100%;
+  height: 300px;
+  overflow: auto;
+  background-size: cover;
+}
+.handbags {
+  background-image: url(../img/photo-1548036328-c9fa89d128fa1.jpg);
+
+  overflow: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+.watches {
+  background-image: url(../img/istockphoto-650142044-612x6121.jpg);
+  overflow: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  object-fit: cover;
+}
+.btn {
+  margin: 0 auto;
+  background: black;
+}
+.handbags {
+  grid-area: a;
+}
+.watches {
+  grid-area: b;
+}
+.gridbox {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+  grid-template-areas:
+    "a"
+    "b";
+}
+@media (min-width: 768px) {
+  .gridbox {
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "a b";
+  }
+}
+
+.card1 {
+  grid-area: c;
+}
+.card2 {
+  grid-area: d;
+}
+.card3 {
+  grid-area: e;
+}
+.card4 {
+  grid-area: f;
+}
+.card5 {
+  grid-area: g;
+}
+.card6 {
+  grid-area: h;
+}
+
+.gridbox1 {
+  display: grid;
+  margin-top: 3px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 8px;
+  grid-template-areas:
+    "c"
+    "d"
+    "e"
+    "f"
+    "g"
+    "h";
+}
+@media (min-width: 768px) {
+  .gridbox1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "c d e"
+      "f g h";
+  }
+}
+.information {
+  grid-area: k;
+}
+.service {
+  grid-area: l;
+}
+.extras {
+  grid-area: m;
+}
+.myaccount {
+  grid-area: n;
+}
+.gridboxinfo {
+  display: grid;
+  margin-top: 3px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 8px;
+  grid-template-areas:
+    "k"
+    "l"
+    "m"
+    "n";
+}
+@media (min-width: 768px) {
+  .gridboxinfo {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "k l m n";
+  }
+}
